@@ -7,14 +7,13 @@
     <title>Slide Show</title>
 </head>
 <body>
-
     <div class="slides">
 
         <div class="pictures">
             <img src="pictures/jojo1.jpeg" height = "500" width ="550" class="slideshow">
         </div>
 
-        <button class="button" onclick = "prev()">Previous</button>
+        <button class="button" onclick = "previous()">Previous</button>
         <button class="button" onclick = "next()">Next</button>
     </div>
 
@@ -23,7 +22,7 @@
       var pictures = ['jojo1.jpeg', 'jojo2.jpeg', 'jojo3.jpeg', 'jojo4.jpeg', 'jojo5.jpeg', 'jojo6.jpeg', 'jojo7.jpeg'];
       var i = 0;
 
-      function prev()
+      function previous()
       {
         if(i < 1)
         {
@@ -53,9 +52,6 @@
       {
         return slider.setAttribute('src', "pictures/" + pictures[i]);
       }
-
     </script>
-
-
 </body>
 </html>
