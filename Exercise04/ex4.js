@@ -1,17 +1,15 @@
-let r1 = document.querySelector('#r1')
-let g1 = document.querySelector('#g1')
-let b1 = document.querySelector('#b1')
+let red1 = document.querySelector('#red1')
+let green1 = document.querySelector('#green1')
+let blue1 = document.querySelector('#blue1')
 let w = document.querySelector('#w')
-
-let r2 = document.querySelector('#r2')
-let g2 = document.querySelector('#g2')
-let b2 = document.querySelector('#b2')
-
+let red2 = document.querySelector('#red2')
+let green2 = document.querySelector('#green2')
+let blue2 = document.querySelector('#blue2')
 let change = document.querySelector('#button')
 let paragraph = document.querySelector(".paragraph")
 
 change.addEventListener("click", () => {
-    paragraph.style.borderColor = 'rgb(' +r1.value + ',' + g1.value + ',' + b1.value + ')'
+    paragraph.style.backgroundColor = 'rgb(' +red1.value + ',' + green1.value + ',' + blue1.value + ')'
+    paragraph.style.borderColor = 'rgb(' +red2.value + ',' + green2.value + ',' + blue2.value + ')'
     paragraph.style.borderWidth = w.value + 'px'
-    paragraph.style.backgroundColor = 'rgb(' +r2.value + ',' + g2.value + ',' + b2.value + ')'
 })
